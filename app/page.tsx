@@ -55,7 +55,7 @@ const Home = () => {
       <input type="text" value={searchTerm} onChange={handleChange} placeholder="Find a drink" className="form-input px-4 py-2 mb-4 rounded-md border-gray w-full" />
       <PerfectScrollbar className="content">
         {drinks.map((drink) => (
-          <DrinkItem drink={drink} />
+          <DrinkItem key={drink.idDrink} drink={drink} />
         ))}
       </PerfectScrollbar>
     </div>
