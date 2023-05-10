@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+}
+body {
+  background-color: gainsboro;
+  height: 800px;
+}
+.content {
+  height: 90% !important;
+}
